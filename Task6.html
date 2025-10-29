@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Task 6 Report - Create & Evaluate Strong Passwords</title>
+<style>
+    :root {
+        --primary: #1e293b;
+        --secondary: #0f766e;
+        --accent: #06b6d4;
+        --success: #10b981;
+        --warning: #f59e0b;
+        --danger: #ef4444;
+        --light-bg: #f8fafc;
+        --card-bg: #ffffff;
+        --border: #e2e8f0;
+        --text: #1e293b;
+        --text-muted: #64748b;
+    }
+    * {
+        margin: 0; padding: 0; box-sizing: border-box;
+    }
+    body {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+            'Helvetica Neue', sans-serif;
+        background: var(--light-bg);
+        color: var(--text);
+        line-height: 1.6;
+        padding: 20px;
+    }
+    .container { max-width: 920px; margin: 0 auto; }
+    header {
+        background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+        color: white;
+        padding: 40px 30px;
+        border-radius: 12px;
+        margin-bottom: 30px;
+        box-shadow: 0 4px 20px rgba(30, 41, 59, 0.2);
+    }
+    header h1 { font-size: 2.3rem; font-weight: 700; margin-bottom: 6px;}
+    header p { font-size: 1.1rem; opacity: 0.95; font-weight: 300; }
+    .content { display: flex; flex-direction: column; gap: 24px; }
+    .card {
+        background: var(--card-bg);
+        border-radius: 12px;
+        padding: 28px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        border: 1px solid var(--border);
+    }
+    h2 {
+        color: var(--primary);
+        border-bottom: 2px solid var(--accent);
+        font-size: 1.6rem;
+        margin-bottom: 18px;
+        padding-bottom: 12px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    h2::before {
+        content: "▸";
+        color: var(--accent);
+        font-size: 1.3rem;
+    }
+    ol, ul { margin: 12px 0; padding-left: 25px; }
+    li { margin: 8px 0; }
+    .step-image {
+        margin: 18px 0;
+        text-align: center;
+    }
+    .step-image img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+        border: 1px solid var(--border);
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        transition: transform 0.3s ease;
+    }
+    .step-image img:hover {
+        transform: scale(1.02);
+    }
+    .protocol-output {
+        background: var(--light-bg);
+        padding: 16px;
+        border-radius: 8px;
+        font-family: monospace;
+        color: var(--text-muted);
+        white-space: pre-wrap;
+        overflow-x: auto;
+        margin: 16px 0;
+        border: 1px solid var(--border);
+    }
+    p, ul, ol { font-size: 1rem; }
+    footer {
+        text-align: center;
+        color: var(--text-muted);
+        font-size: 0.9rem;
+        margin-top: 40px;
+        padding-top: 20px;
+        border-top: 1px solid var(--border);
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <header>
+        <h1>Task 6 Report: Create and Evaluate Strong Passwords</h1>
+        <p>Cyber Security Internship</p>
+    </header>
+
+    <div class="content">
+        <div class="card">
+            <h2>Step 1: Understand Password Strength</h2>
+            <p>Learn what makes a password strong by exploring character variety, length, and unpredictability.</p>
+            <div class="protocol-output" contenteditable="true" spellcheck="false">
+Key Factors:
+- Length: Longer passwords are generally stronger.
+- Complexity: Use a mix of uppercase, lowercase, numbers, and symbols.
+- Unpredictability: Avoid common words, phrases, or patterns.
+- Passphrases: Combining unrelated words can enhance memorability and strength.
+        </div>
+
+        <div class="card">
+            <h2>Step 2: Create Passwords of Varying Complexity</h2>
+            <p>Generate several passwords mixing uppercase, lowercase, numbers, symbols, and various lengths.</p>
+            <div class="protocol-output">Examples:
+            <br>- password123
+            <br>- Strng@19
+            <br>- 7&Fxl_pR9Jw$ZnQ
+            <br>- /ayu/@3820\jfeb\__2025
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>Step 3: Evaluate with Online Tool</h2>
+            <p>Tested each password on a strength checker like password.kaspersky.com and noted the feedback and score.</p>
+            <div class="step-image">
+                <img src="images/pass1-check.png" alt="Password Meter Result">
+                <p class="step-image-caption">Password 1 from the above list - password123</p>
+            </div>
+            <div class="step-image">
+                <img src="images/pass2-check.png" alt="Password Meter Result">
+                <p class="step-image-caption">Password 2 from the above list - Strng@19</p>
+            </div>
+            <div class="step-image">
+                <img src="images/pass3-check.png" alt="Password Meter Result">
+                <p class="step-image-caption">Password 3 from the above list - 7&Fxl_pR9Jw$ZnQ</p>
+            </div>
+            <div class="step-image">
+                <img src="images/pass4-check.png" alt="Password Meter Result">
+                <p class="step-image-caption">Password 4 from the above list - /ayu/@3820\jfeb\__2025</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>Step 4: Analyze Results</h2>
+            <div class="protocol-output" contenteditable="true" spellcheck="false">
+Feedback:
+- Simple: password123 – Weak: lacks variety, short length, common.
+- Medium: Strng@2025 – Moderate: good variety, very short length.
+- Strong: 7&Fxl_pR9Jw$ZnQ – Excellent: long, unpredictable, includes all types.
+- Passphrase: /ayu/@3820\jfeb\__2025 – Strong: memorable, long, good mix.
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>Step 5: Research Attacks & Best Practices</h2>
+            <p>Explore brute force, dictionary, and phishing attacks to understand risks. Summarize what defenses work best.</p>
+            <div class="protocol-output" contenteditable="true" spellcheck="false">
+Tips:
+- Use 12+ characters, high variety (upper, lower, numbers, symbols).
+- Avoid common words or sequential characters.
+- Prefer passphrases combining unrelated words and symbols.
+- Enable multi-factor authentication.
+- Use password managers for strong and unique passwords.
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>Summary</h2>
+            <p>
+                This task built practical skills in constructing and assessing passwords. By varying complexity and testing with professional tools, the task demonstrated that unpredictable, long, and diverse passwords are far more secure. Combining knowledge of digital attacks with good habits ensures password safety in real-world scenarios.
+            </p>
+        </div>
+    </div>
+
+    <footer>
+        <p>Task 6 Report - Password Security & Best Practices | Cyber Security Internship</p>
+    </footer>
+</div>
+</body>
+</html>
